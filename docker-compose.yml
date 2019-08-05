@@ -1,0 +1,11 @@
+version: '3'
+services:
+  app:
+    command: 'compile.sh'
+    image: 'vimwiki-jekyll/jekyll:v1'
+    volumes:
+      - '$PWD/src:/srv/jekyll'
+      - '$HOME/documents/wiki/wiki:/srv/wiki'
+      - '$HOME/documents/wiki/tmpl:/srv/tmpl'
+    ports:
+      - '4000:4000'
