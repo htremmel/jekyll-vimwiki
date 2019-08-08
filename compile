@@ -1,0 +1,2 @@
+#!/bin/sh
+vim -c ":VimwikiIndex" -c "VimwikiAll2HTML" -c ":q";jekyll build -s /srv/jekyll/ -d /srv/dist

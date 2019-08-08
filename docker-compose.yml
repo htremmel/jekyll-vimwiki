@@ -1,10 +1,12 @@
 version: '3'
 services:
-  build:
-    command: 'compile.sh'
-    image: 'vimwiki-jekyll/jekyll:v1'
+  test:
+    build: .
     volumes:
-      - '$PWD/../src:/srv/jekyll'
-      - '$PWD/../dist:/srv/dist'
+      - '$HOME/documents/wiki-jekyll/src:/srv/jekyll'
+      - '$HOME/documents/wiki-jekyll/dist:/srv/dist'
       - '$HOME/documents/wiki/wiki:/srv/wiki'
       - '$HOME/documents/wiki/tmpl:/srv/tmpl'
+    stdin_open: true
+    tty: true
+

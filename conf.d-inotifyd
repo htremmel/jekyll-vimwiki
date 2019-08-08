@@ -1,0 +1,2 @@
+NOTIFYD_ARGS="/root/compile /srv/wiki:w":"/root/compile /srv/jekyll:w":"/root/compile /srv/tmpl:w"
+INOTIFYD_USER=hans

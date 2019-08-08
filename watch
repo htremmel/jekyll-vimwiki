@@ -1,0 +1,10 @@
+#!/bin/sh
+
+event="$1"
+directory="$2"
+file="$3"
+
+# Compile vimwiki to html within the jekyll directory.
+case "$event" in
+    w) sh /root/compile
+esac
